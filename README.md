@@ -31,10 +31,10 @@
 ## 📂 Project Structure
 
 /ScreenshotTextExtractor/ 
-    ├── main.py # Main Python application 
-    ├── requirements.txt # List of required Python modules 
-    ├── icon.ico # Icon for the executable 
-    ├── /tesseract/ # Local Tesseract OCR engine 
+    ├── main.py # Main Python application.
+    ├── requirements.txt # List of required Python modules. 
+    ├── icon.ico # Icon for the executable. 
+    ├── /tesseract/ # Local Tesseract OCR engine. 
     │ └── tesseract.exe
 
 ---
