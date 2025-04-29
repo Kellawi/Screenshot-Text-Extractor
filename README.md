@@ -1,4 +1,4 @@
-# 🧠 Screen Text Extractor
+# 🧠 Screenshot Text Extractor
 
 > Quickly capture text from anywhere on your screen using powerful OCR technology!
 
@@ -6,7 +6,7 @@
 
 ## 📖 Overview
 
-**Screen Text Extractor** is a lightweight tool that lets you **select any part of your screen** and **extract the text inside** using **OCR (Optical Character Recognition)**.
+**Screenshot Text Extractor** is a lightweight tool that lets you **select any part of your screen** and **extract the text inside** using **OCR (Optical Character Recognition)**.
 
 ✨ Built for simplicity and speed: just a click or a hotkey, and your text is ready to be copied, saved, or used.
 
@@ -30,11 +30,12 @@
 
 ## 📂 Project Structure
 
-/ScreenTextExtractor/ ├── main.py # Main Python application ├── requirements.txt # List of required Python modules ├── icon.ico # Icon for the executable ├── /tesseract/ # Local Tesseract OCR engine │ └── tesseract.exe
-
-yaml
-Copy
-Edit
+/ScreenshotTextExtractor/ 
+    ├── main.py # Main Python application 
+    ├── requirements.txt # List of required Python modules 
+    ├── icon.ico # Icon for the executable 
+    ├── /tesseract/ # Local Tesseract OCR engine 
+    │ └── tesseract.exe
 
 ---
 
@@ -47,83 +48,73 @@ Then open a terminal (or Command Prompt) in the project folder and run:
 
 ```bash
 pip install -r requirements.txt
+```
 This will install all necessary modules.
 
-2. Run the Application
+### 2. Run the Application
 After installing, start the app by running:
 
-bash
-Copy
-Edit
+```bash
 python main.py
+```
 ✅ You can now:
 
-Press Ctrl+Shift+S to capture a screen region.
+- Press Ctrl+Shift+S to capture a screen region.
 
-Extract text automatically.
+- Extract text automatically.
 
-Copy or view the text in the history panel.
+- Copy or view the text in the history panel.
 
-🔨 How to Build a Standalone EXE
+## 🔨 How to Build a Standalone EXE
 You can turn this project into a single .exe file — no Python or Tesseract installation required!
 
-Step 1: Install PyInstaller
-bash
-Copy
-Edit
+### Step 1: Install PyInstaller
+```bash
 pip install pyinstaller
-Step 2: Build the EXE
+```
+
+### Step 2: Build the EXE
 From your project directory, run:
 
-bash
-Copy
-Edit
+```bash
 pyinstaller --onefile --windowed --icon=icon.ico --add-data "tesseract;tesseract" main.py
-Explanation:
+```
+### Explanation:
 
---onefile → Combines all code and assets into a single .exe
+- **--onefile** → Combines all code and assets into a single .exe
 
---windowed → Hides the console window (GUI only)
+- **--windowed** → Hides the console window (GUI only)
 
---icon=icon.ico → Adds your custom icon
+- **--icon=icon.ico** → Adds your custom icon
 
---add-data → Bundles the local tesseract/ folder
+- **--add-data** → Bundles the local tesseract/ folder
 
-✅ Your executable will be saved in:
+### ✅ Your executable will be saved in:
 
-bash
-Copy
-Edit
+```bash
 /dist/main.exe
+```
+
 Just double-click it on any Windows machine!
 
-🌐 Supported Languages
-By default, Tesseract is set up for English.
-However, it supports many other languages if trained data files are added.
+### 📌 This app works with anything Tesseract can recognize:
 
-📌 This app works with anything Tesseract can recognize:
+- English
 
-English
+- Numbers
 
-Numbers
+- Symbols
 
-Symbols
+### 💬 Why Use This?
+- 🚀 Ultra lightweight and fast
 
-Additional languages (with proper setup)
+- 🔒 Fully offline (no internet needed)
 
-📸 Screenshots
-Coming soon: A preview of how the app looks and works!
+- 🛡️ No tracking or data collection
 
-💬 Why Use This?
-🚀 Ultra lightweight and fast
+- 🎯 Perfect for quick daily use, devs, writers, students
 
-🔒 Fully offline (no internet needed)
+### 🤝 Credits
+### Author: Bashar Kellawi
 
-🛡️ No tracking or data collection
-
-🎯 Perfect for quick daily use, devs, writers, students
-
-🤝 Credits
-Author: Bashar Kellawi
-
-AI Assistant: ChatGPT (OpenAI)
+### AI Assistant: ChatGPT (OpenAI)
