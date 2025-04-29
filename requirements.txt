@@ -1,0 +1,9 @@
+tk
+ttkbootstrap
+pyautogui
+pytesseract
+pyperclip
+Pillow
+screeninfo
+keyboard
+pystray
